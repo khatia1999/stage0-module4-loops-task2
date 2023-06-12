@@ -9,15 +9,15 @@ public class WordsBuilder {
         int index = 0;
         while (index < chars.length) {
             phraseBuilder.append(chars[index]);
+
             index++;
         }
 
         String phrase = phraseBuilder.toString();
         System.out.println(phrase);
-    }
-
 
     }
+}
 
 
 //Write a program that will build a phrase from given chars (char...). !HINT check length method in google!
