@@ -11,6 +11,7 @@ public class WordsBuilder {
             phraseBuilder.append(chars[index]);
 
             index++;
+
         }
 
         String phrase = phraseBuilder.toString();
