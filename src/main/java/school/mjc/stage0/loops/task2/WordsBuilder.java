@@ -4,18 +4,12 @@ import java.io.StringWriter;
 
 public class WordsBuilder {
     public void buildPhrase(char... chars) {
-        StringBuilder phraseBuilder = new StringBuilder();
-        
-        int index = 0;
-        while (index < chars.length) {
-            phraseBuilder.append(chars[index]);
-
-            index++;
-
+        int i = 0;
+        while(i<chars.length)
+        {
+            System.out.print(chars[i]);
+            i++;
         }
-
-        String phrase = phraseBuilder.toString();
-        System.out.println(phrase);
 
     }
 }

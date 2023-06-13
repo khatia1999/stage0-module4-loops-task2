@@ -5,17 +5,13 @@ package school.mjc.stage0.loops.task2;
 public class EvenNumbersPrinter {
     public void printEvenNumbers(int printTillInclusive) {
 
-        int num = 1;
+        int i=2;
 
-        while(num <= printTillInclusive){
-
-            if(printTillInclusive % 2 == 0){
-                System.out.println("even number : " + num);
-            } else{
-                System.out.println("not even numbers :" + num);
+        while (i <= printTillInclusive) {
+            if (i % 2 == 0) {
+                System.out.println(i);
             }
-
-            num++;
+            i++;
         }
 
     }

@@ -3,25 +3,25 @@ package school.mjc.stage0.loops.task2;
 public class PowerOfTwo {
     public void printPower(int power) {
 
-     int num = 2;
-
-     if(power <  0){
-         System.out.println("too much power");
-     } else{
-
-         int exponent = 0;
-
-         while(exponent <= power){
-
-
-             double numPower = Math.pow(num, power);
-             System.out.println(numPower);
-             exponent++;
+        int sum=1;
+        if(power>0){
+            int i = 1;
+            System.out.println(1);
+            while(i<=power)
+            {
+                sum = sum * 2;
+                i++;
+                System.out.println(sum);
+            }}else if(power==0)
+            System.out.println(1);
+        else
+        {
+            System.out.println("too much power");
+        }
 
        }
      }
-    }
-  }
+
 
 
 //Write a program that will take int power as an argument. This argument will be used to calculate power of 2.
