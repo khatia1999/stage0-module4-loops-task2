@@ -1,6 +1,6 @@
 package school.mjc.stage0.loops.task2;
 
-import java.lang.foreign.SymbolLookup;
+
 
 public class EvenNumbersPrinter {
     public void printEvenNumbers(int printTillInclusive) {
