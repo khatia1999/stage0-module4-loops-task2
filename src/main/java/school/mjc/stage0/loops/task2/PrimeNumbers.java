@@ -3,15 +3,28 @@ package school.mjc.stage0.loops.task2;
 public class PrimeNumbers {
     public void printPrimeNumbers(int printToInclusive) {
 
-        int num = 0;
+        int i, number = 1, count;
 
-        while(num <= printToInclusive){
-            if(num % 2 !=0) {
-                System.out.println("Prime number:" + num);
-            } else{
-                System.out.println("Not a prime number:" + num);
+        while(number <= printToInclusive)
+        {
+            count = 0;
+            i = 2;
+            while(i <= number/2 )
+            {
+                if(number % i == 0)
+                {
+                    count++;
+                    break;
+                }
+                i++;
             }
+            if(count == 0 && number != 1 )
+            {
+                System.out.println(number);
+            }
+            number++;
         }
+
 
     }
 }
